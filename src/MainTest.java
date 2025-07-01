@@ -51,5 +51,6 @@ class MainTest {
     @Test
     void pifogor() {
         Assertions.assertEquals(1.41, (double)(Math.round(Main.Pifogor(1,1)*100))/100.0);
+
     }
 }
