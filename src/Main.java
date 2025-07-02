@@ -13,8 +13,8 @@ public class Main {
         System.out.println("Площадь круга c радиусом 5.67 = " + String.format("%.2f", calculateArea(5.67)));
         System.out.println("Площадь прямоугольника со сторонами 3.46 и 5.67 = " + String.format("%.2f", calculateArea(3.46, 5.67)));
         double[] dnums = {1.3, 2.5, 5.3};
-        System.out.println("Cреднее арифметическое массива {1.3, 2.5, 5.3} = " + String.format("%.3f", AverageNums(dnums)));
-        System.out.println("При катетах = 1.5 и 2.5, гипотенуза = " + String.format("%.3f", Pifogor(1.5, 2.5)));
+        System.out.println("Cреднее арифметическое массива {1.3, 2.5, 5.3} = " + String.format("%.3f", averageNums(dnums)));
+        System.out.println("При катетах = 1.5 и 2.5, гипотенуза = " + String.format("%.3f", pifogor(1.5, 2.5)));
     }
 
     /**
@@ -72,7 +72,7 @@ public class Main {
 
     // 6. Реализуйте метод, который принимает три числа и возвращает их среднее арифметическое.
 
-    public static double AverageNums(double[] nums) {
+    public static double averageNums(double[] nums) {
         if (nums.length == 0 || nums == null) {
             return 0;
         }
@@ -85,7 +85,7 @@ public class Main {
 
     // 7. Напишите метод, который принимает два числа, представляющие длины катетов, и возвращает длину гипотенузы (используйте теорему Пифагора).
 
-    public static double Pifogor(double a, double b) {
+    public static double pifogor(double a, double b) {
         if ((a <= 0) || (b <= 0)) return 0;
         return Math.sqrt((a * a) + (b * b));
     }

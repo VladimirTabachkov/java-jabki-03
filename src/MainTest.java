@@ -38,19 +38,19 @@ class MainTest {
     }
 
     @Test
-    void CalculateAreaR() {
+    void calculateAreaR() {
         Assertions.assertEquals(30, (double) (round(Main.calculateArea(5, 6) * 100)) / 100.0);
     }
 
     @Test
     void averageNums() {
         double[] dnums = {1, 2, 3};
-        Assertions.assertEquals(2, (double) (round(Main.AverageNums(dnums) * 100)) / 100.0);
+        Assertions.assertEquals(2, (double) (round(Main.averageNums(dnums) * 100)) / 100.0);
     }
 
     @Test
     void pifogor() {
-        Assertions.assertEquals(1.41, (double) (round(Main.Pifogor(1, 1) * 100)) / 100.0);
+        Assertions.assertEquals(1.41, (double) (round(Main.pifogor(1, 1) * 100)) / 100.0);
 
     }
 }
