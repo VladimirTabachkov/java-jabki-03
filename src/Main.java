@@ -71,7 +71,6 @@ public class Main {
     }
 
     // 6. Реализуйте метод, который принимает три числа и возвращает их среднее арифметическое.
-
     public static double averageNums(double[] nums) {
         if (nums.length == 0 || nums == null) {
             return 0;
@@ -84,7 +83,6 @@ public class Main {
     }
 
     // 7. Напишите метод, который принимает два числа, представляющие длины катетов, и возвращает длину гипотенузы (используйте теорему Пифагора).
-
     public static double pifogor(double a, double b) {
         if ((a <= 0) || (b <= 0)) return 0;
         return Math.sqrt((a * a) + (b * b));
